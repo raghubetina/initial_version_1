@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 20141118032600) do
     t.string   "provider"
     t.string   "uid"
     t.string   "nickname"
+    t.string   "first_name"
+    t.string   "last_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
