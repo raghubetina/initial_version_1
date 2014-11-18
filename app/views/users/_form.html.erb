@@ -12,12 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
+    <%= f.label :provider %><br>
+    <%= f.text_field :provider %>
   </div>
   <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
+    <%= f.label :uid %><br>
+    <%= f.text_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :nickname %><br>
+    <%= f.text_field :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :avatar_url %><br>
+    <%= f.text_field :avatar_url %>
+  </div>
+  <div class="field">
+    <%= f.label :access_token %><br>
+    <%= f.text_field :access_token %>
   </div>
   <div class="actions">
     <%= f.submit %>

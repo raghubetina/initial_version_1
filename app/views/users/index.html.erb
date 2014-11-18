@@ -5,8 +5,13 @@
 <table>
   <thead>
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>Provider</th>
+      <th>Uid</th>
+      <th>Name</th>
+      <th>Nickname</th>
+      <th>Email</th>
+      <th>Avatar url</th>
+      <th>Access token</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,8 +19,13 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
+        <td><%= user.provider %></td>
+        <td><%= user.uid %></td>
+        <td><%= user.name %></td>
+        <td><%= user.nickname %></td>
+        <td><%= user.email %></td>
+        <td><%= user.avatar_url %></td>
+        <td><%= user.access_token %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
